@@ -1,5 +1,5 @@
 {
-  "extends": "@zinkawaii/tsconfig",
+  "extends": "@tsconfig/node24/tsconfig.json",
   "compilerOptions": {
     "paths": {
       "@/*": [

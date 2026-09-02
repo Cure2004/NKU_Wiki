@@ -1,3 +1,7 @@
 node_modules/
 docs/.vitepress/dist
 docs/.vitepress/cache
+docs/.vitepress/.temp
+
+# 构建工具产生的临时文件（esbuild 等）
+_tmp_*

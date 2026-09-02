@@ -1,20 +1,19 @@
 # 工作流名称
 name: Deploy VitePress site to Pages
 
-# 触发条件：推送到 main 分支时触发
+# 触发条件：推送到 main 分支，或手动触发
 on:
   push:
     branches: [main]
-  # 支持手动触发
   workflow_dispatch:
 
-# 权限设置（部署到 Pages 所需）
+# 部署到 Pages 所需的最小权限
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 并发控制：同一时间只运行一个部署任务
+# 并发控制：部署排队执行，不互相取消
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -27,43 +26,46 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
+          # lastUpdated: true 需要完整 git 历史，不能用默认的 depth=1
           fetch-depth: 0
 
-      # 安装 pnpm（版本与你本地一致 11.25.0）
+      # pnpm 需在 setup-node 之前安装，以便后续步骤能直接使用 pnpm 命令
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 11.25.0
 
-      # 安装 Node.js（版本与你本地一致 24.20.0）
       - name: Setup Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v4
         with:
-          node-version: 24.20.0
-          cache: pnpm
+          # 与本地环境及 tsconfig.json 的 @tsconfig/node24 保持一致
+          node-version: 24
 
-      # 缓存 VitePress 构建文件
-      - name: Cache VitePress
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 本项目 .npmrc 设置了 lockfile=false，不生成 pnpm-lock.yaml，
+      # 因此不能依赖 setup-node 的 cache: pnpm（它要求 lock 文件存在），改为手动缓存 pnpm store
+      - name: Get pnpm store directory
+        shell: bash
+        run: echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
+
+      - name: Cache pnpm store
         uses: actions/cache@v4
         with:
-          path: docs/.vitepress/cache
-          key: ${{ runner.os }}-vitepress-${{ hashFiles('docs/**', 'pnpm-lock.yaml') }}
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('package.json', 'pnpm-workspace.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-vitepress-
+            ${{ runner.os }}-pnpm-store-
 
-      # 配置 GitHub Pages
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      # 安装依赖（使用 pnpm）
+      # GitHub Actions 默认 CI=true，pnpm 会默认走 frozen-lockfile；
+      # 项目没有 lock 文件，必须显式关闭，否则报 "Headless installation requires a pnpm-lock.yaml"
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
-      # 构建 VitePress 站点
       - name: Build with VitePress
-        run: pnpm run docs:build
+        run: pnpm run build
 
-      # 上传构建产物到 Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -71,12 +73,11 @@ jobs:
 
   # 部署任务
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
     runs-on: ubuntu-latest
-    name: Deploy
     steps:
       - name: Deploy to GitHub Pages
         id: deployment

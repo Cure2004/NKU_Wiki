@@ -2,9 +2,14 @@
 <div class="not-found">
 	<img class="logo" src="" alt="">
 	<h1>页面未找到</h1>
-	<a class="button" href="/">返回主页</a>
+	<!-- 原生 a 标签不会被 VitePress 自动补 base，需用 withBase 处理子路径部署 -->
+	<a class="button" :href="withBase('/')">返回主页</a>
 </div>
 </template>
+
+<script setup lang="ts">
+import { withBase } from 'vitepress'
+</script>
 
 <style scoped>
 .not-found {

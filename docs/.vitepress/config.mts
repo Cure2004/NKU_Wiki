@@ -2,7 +2,14 @@ import type { DefaultTheme } from 'vitepress'
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/zh/reference/site-config
+// GitHub Pages 项目站点部署在子路径下，必须与仓库名一致：
+// https://cure2004.github.io/NKU_Wiki/
+// 若将来绑定自定义域名到根路径，把这里改回 '/' 即可
+const base = '/NKU_Wiki/'
+
 export default defineConfig({
+	base,
+
 	lang: 'zh-CN',
 	title: '南开 Wiki',
 	description: '南开大学大学第三方公益校园生活百科',
@@ -44,7 +51,8 @@ export default defineConfig({
 	},
 
 	head: [
-		['link', { rel: 'icon', href: '/logo.svg' }],
+		// 注意：head 里手写的路径不会被自动补 base，需手动拼接
+		['link', { rel: 'icon', href: `${base}logo.svg` }],
 		['link', { rel: 'preconnect', href: 'https://fonts.gstatic.cn/', crossorigin: '' }],
 		['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.cn/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap' }],
 		['link', { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }],

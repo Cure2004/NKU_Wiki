@@ -24,12 +24,15 @@
 	--vp-c-brand-soft: #B07CB066;
 }
 
-/* .dark:root {
+/* 旧配色（已废弃，保留备查）
+.dark:root {
 	--vp-c-brand-1: #3AF;
 	--vp-c-brand-2: #7CF;
+	--vp-c-brand-soft: #33aaff55;
+}
+*/
 
-	/* --vp-c-brand-soft: #33aaff55; */
-*/ code,
+code,
 pre {
 	text-autospace: none;
 }
@@ -66,7 +69,8 @@ pre {
 	width: 1em;
 	height: 1em;
 	margin-right: 0.3em;
-	background: url("/logo.svg") no-repeat;
+	/* CSS 中的绝对路径不会被 base 处理，需与 config.mts 的 base 保持一致 */
+	background: url("/NKU_Wiki/logo.svg") no-repeat;
 	vertical-align: middle;
 }
 

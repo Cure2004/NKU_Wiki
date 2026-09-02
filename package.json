@@ -27,6 +27,7 @@
     "@zinkawaii/tsconfig": "^0.1.0",
     "eslint": "^10.9.1",
     "markdown-it-mathjax3": "4.3.2",
-    "stylelint": "^17.14.1"
+    "stylelint": "^17.14.1",
+    "typescript": "^5.9.3"
   }
 }

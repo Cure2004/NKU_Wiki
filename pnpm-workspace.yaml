@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+
+lockfile: false
+
+shamefullyHoist: true

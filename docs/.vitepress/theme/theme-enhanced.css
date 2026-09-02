@@ -1,0 +1,71 @@
+/* stylelint-disable selector-class-pattern */
+.VPMenuGroup > .title {
+	font-size: 0.7em;
+}
+
+.VPSwitch > .check {
+	bottom: 1px;
+	width: auto;
+	height: auto;
+	aspect-ratio: 1;
+}
+
+.vp-doc > div > :where(h4, h5, h6) {
+	margin: 1.4em 0 0.5em;
+}
+
+.vp-doc blockquote > p {
+	margin: 1em 0;
+}
+
+.vp-doc table {
+	font-variant-numeric: tabular-nums;
+}
+
+.vp-doc a {
+	background: linear-gradient(var(--vp-c-brand-soft), var(--vp-c-brand-soft)) no-repeat center bottom / 100% 2px;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.vp-doc a:hover {
+	border-radius: 0.2em;
+	background: linear-gradient(var(--vp-c-brand-soft), var(--vp-c-brand-soft)) no-repeat center bottom / 100% 100%;
+}
+
+.vp-doc strong {
+	background: linear-gradient(var(--vp-c-brand-soft), var(--vp-c-brand-soft)) no-repeat center bottom / 100% 40%;
+}
+
+.vp-doc s {
+	opacity: 0.6;
+}
+
+.vp-doc ::marker {
+	color: var(--vp-c-brand-1);
+}
+
+.vp-doc ol:not([class]), .vp-doc ol:not([class]) ol ol ol {
+	list-style-type: revert;
+}
+
+.vp-doc ol:not([class]) ol, .vp-doc ol:not([class]) ol ol ol ol {
+	list-style-type: lower-alpha;
+}
+
+.vp-doc ol:not([class]) ol ol, .vp-doc ol:not([class]) ol ol ol ol ol {
+	list-style-type: lower-roman;
+}
+
+.vp-doc .custom-block.custom-block.custom-block > * {
+	margin-bottom: 8px;
+}
+
+.VPBadge {
+	margin: 0 0.1em;
+	padding: 0.2em 0.5em;
+	font-size: 0.8em;
+	line-height: 1.2;
+	vertical-align: 0.1em !important; /* stylelint-disable-line declaration-no-important */
+	transform: none;
+}

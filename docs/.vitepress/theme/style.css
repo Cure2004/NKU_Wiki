@@ -2,11 +2,11 @@
 :root {
 	--vp-font-family-base: "InterVariable", "Noto Sans SC", system-ui, sans-serif;
 	--vp-font-family-mono: ui-monospace, "JetBrains Mono", "Cascadia Code", "Consolas", "monospace", var(--vp-font-family-base), monospace;
-	--vp-c-default-soft: #BBB3;
+	--vp-c-default-soft: #B9B3;
 	--vp-c-brand-1: #6C2E6E;
 	--vp-c-brand-2: #4A2C6D;
 	--vp-c-brand-3: #8B3A8B;
-	--vp-c-brand-soft: #6C2E6E2;
+	--vp-c-brand-soft: #B1F2;
 	--vp-home-hero-name-color: transparent;
 	--vp-home-hero-name-background: linear-gradient(30deg, var(--vp-c-brand-3), var(--vp-c-brand-2));
 	--vp-home-hero-image-filter: blur(240px);

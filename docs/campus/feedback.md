@@ -1,5 +1,5 @@
 ---
-author: [L33Z22L11]
+author: [Cure2004]
 ---
 
 # 反馈与舆论
@@ -8,11 +8,14 @@ author: [L33Z22L11]
 
 如果你在校园中遇到问题，可以尝试向导员反馈。除此之外，你还有多种选择：
 
-- 校园直通车（反馈交流网站）
-- [校长书记信箱](https://www.xiyou.edu.cn/xxfw/sjxzxx.htm)
-- 后勤服务平台
-- 每月的校领导接待日
-- 本科生教学信息员征集
+- 师生服务中心咨询电话：022-85358890
+- 飞书“意见簿”服务
+- 心理中心热线和咨询平台
+  - QQ 预约：1604067922（咨询助理）
+  - 网站预约：xgb.nankai.edu.cn/xljk
+  - 电话预约：022-85358432  022-23503142
+- 校长信箱（学生专用）：President01@nankai.edu.cn
+- 研究生会、学生会常代会提案接收邮箱：nkchangdaihui2016@163.com nkdxcdh@163.com
 - ……
 
 ## 舆论
@@ -21,6 +24,6 @@ author: [L33Z22L11]
 
 ## 部门联系方式
 
-:::tip 参考文档
-[后勤服务产业集团 - 西邮各部门联系方式](https://hqjt.xupt.edu.cn/upload/tel.xls)
+::: tip 参考文档
+[各部门联系方式](https://mp.weixin.qq.com/s/fc54GXU7T-4CcJPsEzqkXg)
 :::

@@ -1,17 +1,22 @@
-# 饮食游乐篇
+---
+author: [LiaojunChen]
+---
+
+# 美食推荐
+
+::: info 此部分未完成
+:::
 
 > 长期接收大家的餐馆推荐投稿：)
 >
 
-## 饮食
-
-学校食堂介绍：
+## 学校食堂介绍：
 
 [南开大学食堂最全介绍](https://mp.weixin.qq.com/s/asYCOYYwQBNSsQdEmas_QA)
 
 [“食”在南开 实在想吃！](https://mp.weixin.qq.com/s/jEsuqDOuOjqh5h4HB0_oEg)
 
-周边美食：（我也没全吃过，欢迎大家去踩雷尝试）
+## 周边美食：（我也没全吃过，欢迎大家去踩雷尝试）
 
 ### 八里台：
 
@@ -41,14 +46,4 @@ DQ、瑞幸咖啡、沪上阿姨、芳竹园火锅、海底捞、九尚鼎烤肉
 
 泸溪河桃酥、DQ、茶太良品、库迪咖啡、尚渔味、米村拌饭、小菜园等
 
-## 玩乐
 
-[大学生五一北京怎么玩？](https://mp.weixin.qq.com/s/FS17Y7tD-wtXbfKAH6fHUQ)
-
-[天津游玩好去处](https://mp.weixin.qq.com/s/uWjvFWHRIYc6OxK6mX0ioQ)
-
-[天津攻略（1）——贪玩学长学姐的亲身感受](https://mp.weixin.qq.com/s/A06FGbdSaq_BPQJjVzPnNw)
-
-[天津攻略（2）——逛吃逛吃篇](https://mp.weixin.qq.com/s/kCqe0iAKdP77_h9FHsBnbg)
-
-[天津攻略（3）——游山玩水逍遥自在](https://mp.weixin.qq.com/s/N1G73yCuRxXaa1mrOrrgJw)

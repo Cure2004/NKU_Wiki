@@ -5,15 +5,15 @@ import Dropdown from '@/components/atomic/Dropdown.vue'
 <template>
 <Dropdown class="coder-gulid">
 	<img src="https://pd.qq.com/favicon.ico" alt="" class="coder-gulid-icon">
-	“西邮码农”频道
+	“南开”频道
 	<div class="desc">
-		实验室纳新、技术交流、就业资讯
+		描述
 	</div>
 
 	<Icon icon="ri:arrow-right-s-line" class="arrow" />
 
 	<template #content>
-		<Qrcode src="https://pd.qq.com/g/xiyoumanong" text="QQ 扫码加入" visit />
+		<Qrcode src="待填入链接" text="QQ 扫码加入" visit />
 	</template>
 </Dropdown>
 </template>

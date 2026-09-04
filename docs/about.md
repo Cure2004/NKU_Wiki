@@ -1,6 +1,6 @@
 ---
 aside: false
-author: [L33Z22L11]
+author: [Cure2004]
 ---
 
 <script setup>
@@ -10,7 +10,7 @@ import MemberList from "@/components/unique/MemberList.vue"
 
 # 关于我们
 
-西邮 Wiki 项目组由 g0ubu1i 牵头成立于 2024-06-30，目前正在撰写内容。
+南开 Wiki 项目组成立于 2026-09-01，目前正在撰写内容。
 
 ## 项目组成员
 
@@ -18,4 +18,4 @@ import MemberList from "@/components/unique/MemberList.vue"
 
 ## 致谢
 
-除了项目组成员之外，许多校友也为项目提供了诸多帮助，在此一并致谢。
+感谢各方友人的支持与帮助。本项目的整体架构衍生自开源项目 [西邮Wiki](https://wiki.cooo.site/)，我们严格遵守其开源许可协议，并在此对原项目的贡献者表示由衷的感谢。同时，也感谢校友及兄弟院校同学在开发过程中提供的宝贵建议。

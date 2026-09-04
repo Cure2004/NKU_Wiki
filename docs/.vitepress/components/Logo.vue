@@ -1,5 +1,38 @@
 <template>
-<svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1540 1760">
-	<path fill="currentColor" fill-rule="evenodd" d="M330 1320a110 110 0 1 0 0 220h880v-220Zm864-996c-133 10-244 188-352 168-108-3-186-142-359-140-138 66-178 115-233 168 158 35 359 82 399 197 33 99-97 211-173 284l90 74c193-91 381-191 398-361 57-175 196-249 326-365-33-20-65-27-96-25ZM330 0h1100c61 0 110 49 110 110v1100c0 61-49 110-110 110v220a110 110 0 1 1 0 220H330A330 330 0 0 1 0 1430V330C0 148 148 0 330 0Z" />
+<svg
+class="logo"
+xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 88 88"
+>
+<defs>
+<mask id="flower-mono-mask">
+  <!-- 外圈：保留 -->
+  <g fill="#fff">
+  <rect x="13" y="13" width="62" height="62" />
+  <rect x="13" y="13" width="62" height="62" transform="rotate(45 44 44)" />
+  </g>
+  <!-- 第二层：挖空 -->
+  <g fill="#000">
+  <rect x="19" y="19" width="50" height="50" />
+  <rect x="19" y="19" width="50" height="50" transform="rotate(45 44 44)" />
+  </g>
+  <!-- 内圈：保留 -->
+  <g fill="#fff">
+  <rect x="25" y="25" width="38" height="38" />
+  <rect x="25" y="25" width="38" height="38" transform="rotate(45 44 44)" />
+  </g>
+  <!-- 中心：挖空 -->
+  <g fill="#000">
+  <rect x="29" y="29" width="30" height="30" />
+  <rect x="29" y="29" width="30" height="30" transform="rotate(45 44 44)" />
+  </g>
+</mask>
+</defs>
+
+<g mask="url(#flower-mono-mask)" fill="currentColor">
+<rect x="13" y="13" width="62" height="62" />
+<rect x="13" y="13" width="62" height="62" transform="rotate(45 44 44)" />
+</g>
 </svg>
+
 </template>

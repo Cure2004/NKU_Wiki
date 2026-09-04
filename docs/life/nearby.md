@@ -1,5 +1,5 @@
 ---
-author: [L33Z22L11]
+author: [LiaojunChen]
 ---
 
 # 周边去处
@@ -7,27 +7,14 @@ author: [L33Z22L11]
 ::: info 此部分未完成
 :::
 
-## 长安校区
+## 玩乐
 
-饮食娱乐：
+[大学生五一北京怎么玩？](https://mp.weixin.qq.com/s/FS17Y7tD-wtXbfKAH6fHUQ)
 
-- 万科广场（师大北侧）
-- GOGO街区/盛世商都（政法北侧）
-- 悦秀城（师大南侧）
-- 智慧城清渠街（邮电大学北 500 米）
-- 西安荟聚（邮电大学北 2 千米）
+[天津游玩好去处](https://mp.weixin.qq.com/s/uWjvFWHRIYc6OxK6mX0ioQ)
 
-休闲：
+[天津攻略（1）——贪玩学长学姐的亲身感受](https://mp.weixin.qq.com/s/A06FGbdSaq_BPQJjVzPnNw)
 
-- 长安公园（邮电大学北 2 千米）
+[天津攻略（2）——逛吃逛吃篇](https://mp.weixin.qq.com/s/kCqe0iAKdP77_h9FHsBnbg)
 
-## 雁塔校区
-
-饮食娱乐：
-
-- 小寨（地铁 1 站直达）
-- 大悦城（邮电大学东 1.5 千米）
-
-休闲：
-
-- 大唐不夜城（邮电大学东 2 千米）
+[天津攻略（3）——游山玩水逍遥自在](https://mp.weixin.qq.com/s/N1G73yCuRxXaa1mrOrrgJw)

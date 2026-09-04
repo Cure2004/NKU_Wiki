@@ -15,14 +15,14 @@ onMounted(() => {
 
 <template>
 <h1 class="center-line">
-	西邮校友博客索引
+	南开校友博客索引
 	<Icon class="shuffle-btn" icon="ri:shuffle-fill" @click="shuffleBlogs" />
 </h1>
 
 <slot />
 
 <div class="center-line vp-doc">
-	由 <a href="https://docs.qq.com/sheet/DSkFiRmpzcVJHSklM?tab=7dbpqq" target="_blank">西邮个人博客列表</a> 生成，可通过在线文档修改信息
+	由 <a href="待填入链接" target="_blank">南开个人博客列表</a> 生成，可通过在线文档修改信息
 </div>
 
 <TransitionGroup tag="section" class="blogs">

@@ -1,44 +1,23 @@
 [
   {
-    "name": "g0ubu1i",
+    "name": "Cure2004",
     "title": "发起人",
-    "github": "g0ubu1i",
-    "linkText": "博客",
-    "link": "https://blog.goubuli.online/"
-  },
-  {
-    "name": "纸鹿/Zhilu",
-    "title": "前端/视觉",
-    "github": "L33Z22L11",
-    "linkText": "博客",
-    "link": "https://blog.zhilu.site/"
-  },
-  {
-    "name": "百灵",
-    "title": "条目策划",
-    "qq": "2859382770",
+    "github": "Cure2004",
     "linkText": "",
     "link": ""
   },
   {
-    "name": "Ph0m",
-    "title": "",
-    "github": "Ph0m1",
-    "linkText": "博客",
-    "link": "https://blog.phom.space/"
-  },
-  {
-    "name": "毕方",
-    "title": "",
-    "github": "Bifangzi",
+    "name": "Liaojun Chen",
+    "title": "内容创作",
+    "github": "LiaojunChen",
     "linkText": "",
     "link": ""
   },
   {
-    "name": "困狗",
-    "title": "",
-    "github": "Claisenn",
-    "linkText": "",
-    "link": ""
+    "name": "名称",
+    "title": "备注",
+    "github": "github名",
+    "linkText": "外链名称",
+    "link": "外链地址"
   }
 ]

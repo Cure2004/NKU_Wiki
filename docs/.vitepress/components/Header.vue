@@ -1,5 +1,12 @@
 <template>
-
+<header>
+	<p>
+		欢迎加入 QQ 群 <Tip copy>
+			<strong>1108024910</strong>
+		</Tip>。项目修缮中，可贡献内容。
+	</p>
+	<Logo class="header-logo" />
+</header>
 </template>
 
 <style scoped>
